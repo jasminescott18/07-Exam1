@@ -2,8 +2,8 @@
 Exam 1, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Valerie Galluzzi, Mark Hays,
-         Amanda Stouder, their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Amanda Stouder, their colleagues and Jasmine Scott.
+"""  # COMPLETED: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import testing_helper
 import time
@@ -20,7 +20,7 @@ def main():
 def problem2a_testing():
     """ Tests the   sum_of_digits_of_sum_of_factors   function. """
     ############################################################################
-    #  TODO: 2. Implement this TEST function.  See the IMPORTANT NOTE below.
+    #  COMPLETED: 2. Implement this TEST function.  See the IMPORTANT NOTE below.
     #     This problem TESTS the    sum_of_digits_of_sum_of_factors    function
     #     that is defined below.  Include at least **   4   ** tests.
     #     Use the usual format:
@@ -44,6 +44,30 @@ def problem2a_testing():
     print('---------------------------------------------------------')
     print('Testing the   sum_of_digits_of_sum_of_factors   function:')
     print('---------------------------------------------------------')
+
+    # Test 1
+    expected = 2
+    actual = sum_of_digits_of_sum_of_factors(13)
+    print(' Test 1 expected:', expected)
+    print('          actual:', actual)
+
+    # Test 2
+    expected = 4
+    actual = sum_of_digits_of_sum_of_factors(14)
+    print(' Test 2 expected:', expected)
+    print('          actual:', actual)
+
+    # Test 3
+    expected = 3
+    actual = sum_of_digits_of_sum_of_factors(25)
+    print(' Test 3 expected:', expected)
+    print('          actual:', actual)
+
+    # Test 4
+    expected = 4
+    actual = sum_of_digits_of_sum_of_factors(8)
+    print(' Test 4 expected:', expected)
+    print('          actual:', actual)
 
 
 def sum_of_digits_of_sum_of_factors(n):
