@@ -91,7 +91,19 @@ def problem3(point, length, delta, window):
     y = point.y + length
     point1 = rg.Point(x, y)
     line = rg.Line(point, point1)
+    line.thickness = 3
+    line.color = 'black'
+
     line.attach_to(window)
+    window.render()
+
+    for k in range(5):
+        x2 = point.x + length
+        y2 = point.y + (delta * k)
+        point2 = rg.Point(x2, y2)
+        line2 = rg.Line(point, point2)
+        line2.attach_to(window)
+
     window.render()
 
     # --------------------------------------------------------------------------
