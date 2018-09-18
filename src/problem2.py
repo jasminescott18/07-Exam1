@@ -31,9 +31,9 @@ def problem2a_testing():
     #       print('Expected:', expected)
     #       print('Actual:  ', actual)
     #
-    #  TODO (continued): IMPORTANT NOTE:
-    #  TODO (continued):   The function that you are TESTING is PURPOSELY
-    #  TODO (continued)    NOT implemented.  Do NOT implement it.  That is,
+    #  COMPLETED (continued): IMPORTANT NOTE:
+    #  COMPLETED (continued):   The function that you are TESTING is PURPOSELY
+    #  COMPLETED (continued)    NOT implemented.  Do NOT implement it.  That is,
     #                   do NOT implement the
     #                           sum_of_digits_of_sum_of_factors
     #                   function!  Just write these TESTS of that function
