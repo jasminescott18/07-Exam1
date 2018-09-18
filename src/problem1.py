@@ -90,9 +90,8 @@ def problem1a(rectangle, square, thickness, window):
     """
     rectangle.attach_to(window)
     square.attach_to(window)
-    x = rectangle.corner_1.x + rectangle.corner_2.x / 2
-    midpoint = rg.Point(x, rectangle.corner_1.y)
-    line = rg.Line(square.center, midpoint)
+    center = rg.Point((rectangle.get_upper_left_corner().x * 1.5), rectangle.get_upper_right_corner().y)
+    line = rg.Line(square.center, center)
     line.color = rectangle.outline_color
     line.thickness = thickness
     line.attach_to(window)
@@ -160,11 +159,12 @@ def problem1b(point, win, width, height, color):
       :type color:  str
     """
     x = point.x + width
-    point1 = rg.Point(x, point.y)
+    y = point.y + height
+    point1 = rg.Point(x, y)
     ellipse = rg.Ellipse(point, point1)
+    ellipse.fill_color = color
     ellipse.attach_to(win)
-    win.render
-
+    win.render()
 
     # --------------------------------------------------------------------------
     # TODO: 3. Implement and test this function.  SEE THE PICTURES in the PDF!

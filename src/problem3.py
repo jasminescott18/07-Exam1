@@ -97,10 +97,10 @@ def problem3(point, length, delta, window):
     line.attach_to(window)
     window.render()
 
-    for k in range(5):
-        x2 = point.x + length
-        y2 = point.y + (delta * k)
-        point2 = rg.Point(x2, y2)
+    for k in range(2):
+        x2 = point.x + length + (20 * k)
+        y = point.y + (80 * k)
+        point2 = rg.Point(x2, y)
         line2 = rg.Line(point, point2)
         line2.attach_to(window)
 
