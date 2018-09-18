@@ -341,12 +341,12 @@ def problem2b(a, b, x):
     return total
 
     ############################################################################
-    # TODO: 4. Implement and test this function.  See the IMPORTANT NOTE below!
+    # COMPLETED: 4. Implement and test this function.  See the IMPORTANT NOTE below!
     #          Tests have been written for you (above).
     ############################################################################
-    # TODO (continued): IMPORTANT NOTE:
-    # TODO (continued):   **  For full credit you must appropriately use
-    # TODO (continued):       (i.e., call) the   number_of_factors   function
+    # COMPLETED (continued): IMPORTANT NOTE:
+    # COMPLETED (continued):   **  For full credit you must appropriately use
+    # COMPLETED (continued):       (i.e., call) the   number_of_factors   function
     #                         that is DEFINED ABOVE.
     ############################################################################
 
@@ -463,6 +463,7 @@ def problem1c(m):
              11 13 17 19,
            and 11 + 13 + 17 + 19 = 60.
      """
+
     ############################################################################
     # TODO: 4. Implement and test this function.  See the IMPORTANT NOTE below!
     #          Tests have been written for you (above).
