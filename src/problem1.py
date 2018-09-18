@@ -90,16 +90,15 @@ def problem1a(rectangle, square, thickness, window):
     """
     rectangle.attach_to(window)
     square.attach_to(window)
-    center = rg.Point((rectangle.get_upper_left_corner().x * 1.5), rectangle.get_upper_right_corner().y)
+    center = rg.Point((rectangle.get_upper_left_corner().x * 1.5), rectangle.get_upper_left_corner().y)
     line = rg.Line(square.center, center)
     line.color = rectangle.outline_color
     line.thickness = thickness
     line.attach_to(window)
     window.render()
 
-
     # --------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.  SEE THE PICTURES in the PDF!
+    # COMPLETED: 2. Implement and test this function.  SEE THE PICTURES in the PDF!
     #          Tests have been written for you (above).
     # --------------------------------------------------------------------------
 
@@ -167,7 +166,7 @@ def problem1b(point, win, width, height, color):
     win.render()
 
     # --------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.  SEE THE PICTURES in the PDF!
+    # COMPLETED: 3. Implement and test this function.  SEE THE PICTURES in the PDF!
     #          Tests have been written for you (above).
     # --------------------------------------------------------------------------
 
